@@ -1,0 +1,1 @@
+{"bsonType":"object","required":["title","content","category","status","createdAt"],"properties":{"title":{"bsonType":"string"},"content":{"bsonType":"string"},"category":{"bsonType":"string"},"status":{"enum":["enabled","disabled"]},"createdAt":{"bsonType":"date"},"updatedAt":{"bsonType":"date"}}}

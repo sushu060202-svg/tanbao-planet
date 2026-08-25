@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "required": ["userId", "content", "carbon", "points", "createdAt"],
+  "properties": {
+    "userId": {"bsonType": "string"},
+    "content": {"bsonType": "string"},
+    "behaviorType": {"bsonType": "string"},
+    "carbon": {"bsonType": "double", "minimum": 0},
+    "points": {"bsonType": "int", "minimum": 0},
+    "confidence": {"bsonType": "double"},
+    "advice": {"bsonType": "array"},
+    "report": {"bsonType": "string"},
+    "createdAt": {"bsonType": "date"}
+  }
+}

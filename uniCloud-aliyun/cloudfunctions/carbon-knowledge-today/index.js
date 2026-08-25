@@ -1,0 +1,2 @@
+'use strict'
+exports.main=async()=>{const list=(await uniCloud.database().collection('carbon_knowledge').where({status:'enabled'}).orderBy('createdAt','asc').get()).data;if(!list.length)return{code:0,data:null};const now=new Date();const key=now.getFullYear()+'-'+(now.getMonth()+1)+'-'+now.getDate();let hash=0;for(let i=0;i<key.length;i++)hash=(hash*31+key.charCodeAt(i))>>>0;return{code:0,data:list[hash%list.length]}}

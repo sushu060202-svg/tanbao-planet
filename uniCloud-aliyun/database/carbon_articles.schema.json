@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "required": ["title", "content", "category", "readingMinutes", "status"],
+  "properties": {
+    "title": {"bsonType": "string"},
+    "content": {"bsonType": "string"},
+    "category": {"bsonType": "string"},
+    "coverImage": {"bsonType": "string"},
+    "readingMinutes": {"bsonType": "int"},
+    "status": {"enum": ["enabled", "disabled"]},
+    "publishAt": {"bsonType": "date"},
+    "createdAt": {"bsonType": "date"},
+    "updatedAt": {"bsonType": "date"}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "bsonType": "object",
+  "required": ["username", "passwordHash", "role", "schoolId", "schoolName", "name", "workNo", "status", "createdAt"],
+  "properties": {
+    "username": { "bsonType": "string", "unique": true },
+    "passwordHash": { "bsonType": "string" },
+    "role": { "enum": ["campus"] },
+    "schoolId": { "bsonType": "string" },
+    "schoolName": { "bsonType": "string" },
+    "name": { "bsonType": "string" },
+    "workNo": { "bsonType": "string" },
+    "department": { "bsonType": "string" },
+    "phone": { "bsonType": "string" },
+    "status": { "enum": ["enabled", "disabled"] },
+    "mustChangePassword": { "bsonType": "bool" },
+    "createdAt": { "bsonType": "date" },
+    "updatedAt": { "bsonType": "date" }
+  }
+}

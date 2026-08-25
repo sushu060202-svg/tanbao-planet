@@ -1,0 +1,11 @@
+{
+  "bsonType": "object",
+  "required": ["targetId", "auditorId", "result", "createdAt"],
+  "properties": {
+    "targetId": {"bsonType": "string"},
+    "auditorId": {"bsonType": "string"},
+    "result": {"enum": ["approved", "rejected"]},
+    "reason": {"bsonType": "string"},
+    "createdAt": {"bsonType": "date"}
+  }
+}

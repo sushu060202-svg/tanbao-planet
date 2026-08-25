@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "required": ["activityId", "userId", "schoolId", "image", "status", "createdAt"],
+  "properties": {
+    "activityId": { "bsonType": "string" },
+    "userId": { "bsonType": "string" },
+    "schoolId": { "bsonType": "string" },
+    "image": { "bsonType": "string" },
+    "remark": { "bsonType": "string" },
+    "status": { "enum": ["pending", "approved", "rejected"] },
+    "reason": { "bsonType": "string" },
+    "createdAt": { "bsonType": "date" },
+    "updatedAt": { "bsonType": "date" }
+  }
+}

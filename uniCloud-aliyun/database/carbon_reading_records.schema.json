@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "required": ["userId", "articleId", "readDate", "durationSeconds", "completed", "points", "createdAt"],
+  "properties": {
+    "userId": {"bsonType": "string"},
+    "studentId": {"bsonType": "string"},
+    "articleId": {"bsonType": "string"},
+    "articleTitle": {"bsonType": "string"},
+    "readDate": {"bsonType": "string"},
+    "durationSeconds": {"bsonType": "int"},
+    "completed": {"bsonType": "bool"},
+    "points": {"bsonType": "int"},
+    "createdAt": {"bsonType": "date"}
+  }
+}

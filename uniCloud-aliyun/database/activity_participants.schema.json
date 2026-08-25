@@ -1,0 +1,12 @@
+{
+  "bsonType": "object",
+  "required": ["activityId", "userId", "schoolId", "status", "createdAt"],
+  "properties": {
+    "activityId": { "bsonType": "string" },
+    "userId": { "bsonType": "string" },
+    "schoolId": { "bsonType": "string" },
+    "status": { "enum": ["registered", "submitted", "approved", "rejected"] },
+    "createdAt": { "bsonType": "date" },
+    "updatedAt": { "bsonType": "date" }
+  }
+}

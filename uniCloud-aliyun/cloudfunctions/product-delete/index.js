@@ -1,0 +1,2 @@
+'use strict'
+exports.main=async event=>{const{productId,enterpriseId}=event;if(!productId||!enterpriseId)return{code:400,message:'删除参数不完整'};const db=uniCloud.database();const product=(await db.collection('products').doc(productId).get()).data[0];if(!product||product.enterpriseId!==enterpriseId)return{code:403,message:'无权删除该商品'};await db.collection('products').doc(productId).update({status:'off_sale'});return{code:0}}

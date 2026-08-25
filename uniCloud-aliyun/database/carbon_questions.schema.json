@@ -1,0 +1,14 @@
+{
+  "bsonType": "object",
+  "required": ["title", "options", "answer", "analysis", "category", "points", "status"],
+  "properties": {
+    "title": {"bsonType": "string"},
+    "options": {"bsonType": "array"},
+    "answer": {"bsonType": "string"},
+    "analysis": {"bsonType": "string"},
+    "category": {"bsonType": "string"},
+    "points": {"bsonType": "int"},
+    "status": {"enum": ["enabled", "disabled"]},
+    "createdAt": {"bsonType": "date"}
+  }
+}

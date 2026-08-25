@@ -1,0 +1,14 @@
+{
+  "bsonType": "object",
+  "required": ["userId", "questionId", "answerDate", "answer", "isCorrect", "points", "createdAt"],
+  "properties": {
+    "userId": {"bsonType": "string"},
+    "studentId": {"bsonType": "string"},
+    "questionId": {"bsonType": "string"},
+    "answerDate": {"bsonType": "string"},
+    "answer": {"bsonType": "string"},
+    "isCorrect": {"bsonType": "bool"},
+    "points": {"bsonType": "int"},
+    "createdAt": {"bsonType": "date"}
+  }
+}

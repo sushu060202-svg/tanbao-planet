@@ -1,0 +1,2 @@
+'use strict'
+exports.main=async event=>{const{productId,stock,enterpriseId}=event;if(!productId||stock===undefined||!enterpriseId)return{code:400,message:'库存参数不完整'};const db=uniCloud.database();const product=(await db.collection('products').doc(productId).get()).data[0];if(!product||product.enterpriseId!==enterpriseId)return{code:403,message:'无权修改该商品'};const value=Number(stock);if(!Number.isInteger(value)||value<0)return{code:400,message:'库存必须是非负整数'};await db.collection('products').doc(productId).update({stock:value});return{code:0,stock:value}}

@@ -1,0 +1,18 @@
+{
+  "bsonType": "object",
+  "required": ["title", "organizerId", "organizerType", "schoolId", "status", "createdAt"],
+  "properties": {
+    "title": {"bsonType": "string"},
+    "organizerId": {"bsonType": "string"},
+    "organizerType": {"enum": ["campus", "enterprise"]},
+    "schoolId": {"bsonType": "string"},
+    "type": {"bsonType": "string"},
+    "date": {"bsonType": "string"},
+    "startAt": {"bsonType": "string"},
+    "endAt": {"bsonType": "string"},
+    "location": {"bsonType": "string"},
+    "reward": {"bsonType": "int"},
+    "status": {"enum": ["draft", "published", "closed", "pending", "approved", "rejected"]},
+    "createdAt": {"bsonType": "date"}
+  }
+}
